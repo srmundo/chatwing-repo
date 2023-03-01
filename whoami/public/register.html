@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatWing</title>
+    <link rel="stylesheet" href="../asset/icon/fonts/style.css">
+    <link rel="stylesheet" href="../src/css/register.css">
+    <link rel="stylesheet" href="../asset/font/fonts.css">
+</head>
+
+<body>
+    <h1>Register</h1>
+    <div class="container-l">
+        <span class="icon-phone"></span>
+    </div>
+    <div class="container-form">
+        <form action="../conf/lib/connect.php" method="get">
+            <div class="container-lang">
+                <label for="lang">Language</label>
+                <select name="lang" id="input-lang">
+                    <option value="english">English</option>
+                    <option value="spanish">Espa&ntilde;ol</option>
+                    <option value="portugues">Portugu&ecirc;s</option>
+                </select>
+            </div>
+            <div class="container-tel">
+                <label for="number-phone">Phone number</label>
+                <div class="container-phone">
+                    <select name="code-country" id="input-country">
+                        <option value="Brazil">+55</option>
+                        <option value="Venezuela">+58</option>
+                    </select>
+                    <input type="number" name="number-phone" id="input-number">
+                </div>
+            </div>
+            <div class="container-b-verify">
+                <button id="btn-verify">Verify</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
